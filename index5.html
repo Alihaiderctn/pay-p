@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class=" mx-auto p-8 bg-white shadow-lg rounded-3xl w-[614px] px-[100px] h-[600px] ">
+      <img class="relative float-right" src="./Close.png" alt="">
+          <div class="flex justify-center">
+            <img src="./Logo.png" alt="">
+          </div>
+        <form action="#" method="POST" class="space-y-4">
+          
+          <!-- Name Field -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+              <div>
+                <label for="name" class=" block text-[#005666] text-basent-medium font-['Proxima Nova'] leading-snug">Name</label>
+            
+                <div class="relative">
+                 <i class="fas fa-user absolute left-3 top-3 text-[#005666]"></i>
+                       <input type="text" placeholder="John Smith" class="pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-[#005666] w-full text-gray-700">
+                         </div>
+              </div>
+         
+          <!-- Card Number Field -->
+          <div>
+            <label for="card-number" class="block text-sm font-medium text-[#005666]">Card Number</label>
+            <div class="relative">
+              <i class="fas fa-credit-card absolute left-3 top-3 text-[#005666]"></i>
+              <input type="text" placeholder="555 555  5555" class="pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-[#005666] w-full text-gray-700">
+            </div>
+          </div>
+      
+          <!-- Card Expiry & Security Code -->
+          <div class="flex space-x-4">
+            <div class="w-1/2">
+              <label for="expiry" class="block text-sm font-medium text-[#005666]">Expiry Date</label>
+              <div class="relative">
+                <i class="fas fa-credit-card absolute left-3 top-3 text-[#005666]"></i>
+                <input type="text" placeholder="---/--" class="pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-[#005666] w-full text-gray-700">
+              </div>
+            </div>
+            <div class="w-1/2">
+              <label for="security-code" class="block text-sm font-medium text-[#005666]">Security Code</label>
+              <div class="relative">
+                <i class="fas fa-key absolute left-3 top-3 text-[#005666]"></i>
+
+                <input type="password" placeholder="555" class="pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-[#005666] w-full text-gray-700">
+              </div>
+            </div>
+          </div>
+      
+          <!-- Save Card Checkbox -->
+          <div class="flex items-center">
+            <input id="save-card" name="save-card" type="checkbox" 
+                   class="h-4 w-4 border-[#005666]rounded focus:ring-orange-500 accent-orange-500">
+            <label for="save-card" class="ml-2 block text-sm text-gray-900">
+              Save card for future purchases
+            </label>
+          </div>
+      
+          <!-- Voucher Field -->
+          <div>
+            <label for="voucher" class="block text-sm font-medium text-gray-700">Voucher</label>
+                <div class="relative">
+                  <img class="absolute left-3 top-2" src="./Vector cup.png" alt="">
+                  <input type="text" name="voucher" id="voucher" placeholder="Enter your code here" 
+                  class="mt-1 block w-full border-b-2 border-gray-500 pl-10  py-2 px-3 focus:outline-none focus:ring-[#005666] focus:border-[#005666] sm:text-sm">
+                </div>
+           
+          </div>
+      
+          <!-- Pay Button -->
+           <div class="flex justify-center">
+            <button type="submit" class="w-4/5 mt-5   hover:bg-[#ff765b] hover:text-white  font-semibold py-2 px-4 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 border border-orange-500 text-orange-500">
+              PAY $35.99
+            </button>
+           </div>
+         
+      
+        </form>
+      </div>
+      
+
+</body>
+</html>
